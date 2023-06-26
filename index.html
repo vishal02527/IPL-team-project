@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section start -->
+    <header>
+      <div id="head-container">
+        <div id="head-right">
+          
+          <img src="./img/IPL- Logo-PNG.png" alt="logo here" id="logo" />
+          <a href="index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+        </div>
+        <div id="head-left">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Enter team code...eg -MI" />
+            <div class="autocom-box"></div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            Add Player
+          </button>
+ 
+        </div>
+      </div>
+    </header>
+    <!-- Header Section end -->
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide">
+          <img src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/170054-tlvnvtqkqm-1644756521.jpg" alt="" />
+        </div>
+        <div class="slide first">
+          <img src="https://static.toiimg.com/photo/msid-90417002/90417002.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://newsroom.gy/wp-content/uploads/2018/05/SRH.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://cdn.sportslumo.com/wp-content/uploads/2021/04/18170013/RCB-1.jpg" alt="" />
+        </div>
+        
+ 
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <h1 id="slogan">Indian Premier League 2022</h1>
+    <div id="first-main">
+      
+      <div id="container_teams"><span style="font-weight: bold;">IPL</span>it  has revolutionized the game of cricket, bringing together the best players from around the world to compete in a high-octane T20 format. The IPL has not only elevated the standard of cricket but has also given birth to several franchise teams representing different cities in India. These teams have become the pride and joy of their respective cities, igniting the passion of millions of cricket fans across the country.
+  
+<br/><br/> <span style="font-weight: bold;"> Mumbai Indians (MI):</span>  Mumbai Indians, led by Rohit Sharma, are the most successful team in IPL history, having won the championship trophy a record-breaking five times. Known for their star-studded lineup and dominant performances, Mumbai Indians have become synonymous with consistency and excellence.
+<br/><br/> <span style="font-weight: bold;">  Chennai Super Kings (CSK):</span>  Captained by the charismatic Mahendra Singh Dhoni, Chennai Super Kings have a massive fan base and a reputation for being a strong team. They have won the IPL title three times and are known for their disciplined approach and experienced players.
+<br/><br/> <span style="font-weight: bold;">  Kolkata Knight Riders (KKR):</span>  Kolkata Knight Riders, owned by Bollywood superstar Shah Rukh Khan, have brought glamour and excitement to the IPL. Under the leadership of Dinesh Karthik and later Eoin Morgan, KKR has won the IPL title twice and has always been a competitive team.
+<br/><br/> <span style="font-weight: bold;">  Royal Challengers Bangalore (RCB):</span>  Known for their passionate fan base, Royal Challengers Bangalore have been led by the charismatic Virat Kohli. Despite not clinching the IPL trophy yet, RCB has always had a strong batting lineup, thrilling fans with their explosive performances.
+<br/><br/> <span style="font-weight: bold;">  Rajasthan Royals (RR):</span>  The inaugural champions of the IPL, Rajasthan Royals have had their ups and downs over the years. With their focus on nurturing young talent, RR has been a breeding ground for emerging cricketers and has produced some notable stars.
+<br/><br/> <span style="font-weight: bold;"> Kings XI Punjab (KXIP)/Punjab Kings (PBKS):</span>  Representing the vibrant state of Punjab, this team has had its fair share of ups and downs. With a change in name to Punjab Kings, they are determined to make a mark and have a passionate fan base supporting them.
+<br/><br/> <span style="font-weight: bold;"> Delhi Capitals (DC):</span>  Formerly known as Delhi Daredevils, the team underwent a rebranding and became Delhi Capitals. Under the captaincy of young and dynamic players like Shreyas Iyer and Rishabh Pant, DC has emerged as a strong contender in recent seasons.
+<br/><br/> <span style="font-weight: bold;">Sunrisers Hyderabad (SHR):</span>  previously known as Deccan Chargers, has shown great consistency in their performances. With star players like David Warner and Kane Williamson, they have reached the IPL finals on multiple occasions.  </div>
+    </div>
+    
+
+    <footer>
+      <ul>
+          <li><h3>Teams</h3></li>
+          <li><a href="#">Chennai Super Kings</a></li>
+          <li><a href="#">Delhi Capitals</a></li>
+          <li><a href="#">Lucknow Super Giants</a></li>
+          <li><a href="#">Royal Challengers Bangalore</a></li>
+          <li><a href="#">+ Many More</a></li>
+      </ul>
+      <ul>
+          <li><h3>About</h3></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Anti Corruption Policy</a></li>
+          <li><a href="#">Anti Doping Policy</a></li>
+          <li><a href="#">Code Of Conduct For Players And Teams Officials</a></li>
+      </ul>
+      <ul>
+          <li><h3>Guidelines</h3></li>
+          <li><a href="#">IPL Code Of Conduct For Match Officials</a></li>
+          <li><a href="#">Brand And Protection Guidelines</a></li>
+          <li><a href="#">Suspect Action Policy</a></li>
+          <li><a href="#">Governing Council</a></li>
+          
+      </ul>
+      <ul> 
+          <li><h3>Contact</h3></li>
+          <li>Contact</li>
+          <li>Sponsorship</li>
+          <li>Privacy Policy</li>
+          
+      </ul>
+  </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

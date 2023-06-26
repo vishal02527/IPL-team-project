@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Team</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="head-con2">
+        <div id="head-right">
+          <img
+            src="./img/IPL- Logo-PNG.png"
+            alt="logo here"
+            id="logo"
+          />
+          <a href="./index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div id="add-team">
+      <h1 id="slogan2">Add a Team</h1>
+      <form id="addteamform">
+        <p>Team Name</p>
+        <input
+          id="inp1"
+          type="text"
+          name="teamName"
+          placeholder="Enter team name here.."
+          required
+        />
+        <p>Team logo Url</p>
+        <input
+          id="inp3"
+          type="text"
+          name="logoUrl"
+          placeholder="enter logo URL here.."
+          required
+        />
+        <p>Won count</p>
+        <input
+          id="inp4"
+          type="number"
+          name="wonCount"
+          maxlength="1"
+          placeholder="enter won count here.."
+          required
+        />
+
+        <button type="submit">Add team</button>
+      </form>
+    </div>
+     
+    <footer>
+      <ul>
+          <li><h3>Teams</h3></li>
+          <li><a href="#">Chennai Super Kings</a></li>
+          <li><a href="#">Delhi Capitals</a></li>
+          <li><a href="#">Lucknow Super Giants</a></li>
+          <li><a href="#">Royal Challengers Bangalore</a></li>
+          <li><a href="#">+ Many More</a></li>
+      </ul>
+      <ul>
+          <li><h3>About</h3></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Anti Corruption Policy</a></li>
+          <li><a href="#">Anti Doping Policy</a></li>
+          <li><a href="#">Code Of Conduct For Players And Teams Officials</a></li>
+      </ul>
+      <ul>
+          <li><h3>Guidelines</h3></li>
+          <li><a href="#">IPL Code Of Conduct For Match Officials</a></li>
+          <li><a href="#">Brand And Protection Guidelines</a></li>
+          <li><a href="#">Suspect Action Policy</a></li>
+          <li><a href="#">Governing Council</a></li>
+          
+      </ul>
+      <ul> 
+          <li><h3>Contact</h3></li>
+          <li>Contact</li>
+          <li>Sponsorship</li>
+          <li>Privacy Policy</li>
+          
+      </ul>
+  </footer>
+    <script src="./addteam.js"></script>
+  </body>
+</html>
