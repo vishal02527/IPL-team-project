@@ -9,7 +9,6 @@
   margin-left: 50px;
   width: 100px;
   height: 60px;
-  border-radius: 10px;
 }
 #head-container,
 #head-left {
@@ -20,9 +19,8 @@
   width: 100%;
   box-shadow: 2px 4px 2px rgba(9, 9, 9, 0.5);
   position: fixed;
-  height: 78px;
-
-  background-color: #FBF8BE;
+  height: 85px;
+  background-color: #0beed7;
 }
 #head-con2 {
   margin-top: -100px;
@@ -30,8 +28,7 @@
   box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
   position: fixed;
   height: 70px;
-
-  background-color: #FBF8BE;
+  background-color: #0beed7;
 }
 
 #head-con3 {
@@ -40,8 +37,7 @@
   box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
   position: fixed;
   height: 70px;
-
-  background-color: #FBF8BE;
+  background-color: #0beed7;
 }
 #head-right {
   display: flex;
@@ -49,18 +45,17 @@
   margin: 5px;
   margin-left: 50px;
   height: 60px;
-  border-radius: 10px;
 }
 #head-left {
   width: 45%;
 }
 #home-button {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 10%;
   margin-left: 2%;
   height: 50px;
   width: 100px;
-  background-color: #234E70;
+  background-color: #0084ff;
   border: 0px;
   font-size: 15px;
   font-weight: 600;
@@ -70,30 +65,27 @@
   margin-left: 50px;
 }
 #home-button:hover {
-  color:#009688 ;
+  background-color:#234E70;
   box-shadow: 1px 1px 5px #234E70, -0.1px -0.1px 10px rgb(193, 255, 60);
-  cursor: pointer;
-  
 }
 .add-button {
   cursor: pointer;
-  background-color: #234E70;
+  background-color: #0084ff;
   border: 0px;
   font-size: 15px;
   font-weight: 600;
   border-radius: 5px;
   color: #ffffff;
-  padding: 5px 20px;
+  padding: 0px 20px;
   margin: 10px;
 }
 .add-button:hover {
-  color:#009688 ;
-  box-shadow: 0px 0px 5px  #009688 , -0.1px -0.1px 10px rgb(165, 161, 161);
-  cursor: pointer;
+  background-color:#234E70 ;
+  box-shadow: 1px 1px 5px #234E70, -0.1px -0.1px 10px rgb(193, 255, 60);
 }
 
 .search-input {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 10px;
   background: #fff;
   width: 55%;
@@ -145,9 +137,9 @@
 .search-input .icon {
   position: absolute;
   right: 0px;
-  top: 0px;
-  height: 55px;
-  width: 55px;
+  bottom: 0px;
+  height: 50px;
+  width: 50px;
   text-align: center;
   line-height: 55px;
   font-size: 20px;
@@ -162,14 +154,11 @@
   padding-top: 20px;
   z-index: -1;
   width: 100%;
-  /* height: 500px; */
-  /* border-radius: 10px; */
   overflow: hidden;
 }
 
 .slides {
   width: 500%;
-  /* height: 500px; */
   display: flex;
 }
 
@@ -185,10 +174,8 @@
 }
 
 .slide img {
-  /* width: 95%; */
   width: 100%;
   margin-top: 10px;
-  /* height: 500px; */
 }
 
 /*css for manual slide navigation*/
@@ -285,13 +272,14 @@
 
 /* card grid goes here */
 #container_teams {
-  background-color: #FBF8BE;
+  background-color: rgb(215, 234, 249);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   padding: 50px 10%;
   font-size: medium;
+  line-height: 1.8;
 }
 .minibox {
   width: 23.2%;
@@ -308,14 +296,14 @@
   height: 370px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
-  background-color: #234E70;
+  background-image: linear-gradient(to top, #13f1fc, #0470dc);
   border-radius: 5px;
 }
  
 .minibox:hover {
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 10px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 10px 5px;
   margin-top: 3px !important;
-
+  background-image: linear-gradient(#001f3f, #001f3f);
   transition: 0.2s ease-in-out;
 }
 .mainimage {
@@ -332,6 +320,7 @@
   width: 30vw;
   padding-left: 10vw;
 }
+ 
 #table-team table {
   margin-left: 20vw;
 }
@@ -350,11 +339,12 @@
   border: 1px solid black;
   width: 30vw;
   padding-left: 10vw;
+  background-color: #027166;
 }
 
 #player_detail-img img {
   width: 35%;
-  margin: 5px 0 -10px 0;
+  margin: 5px 0 -5px 0;
   margin-left: 19vw;
 }
 #player-details-wrapper {
@@ -373,7 +363,7 @@
 #addteamform {
   background-color: #234E70;
   border-radius: 20px;
-  margin: 10px 0;
+  margin: 60px 0px;
   width: 60%;
   border: 1px solid black;
   display: flex;
@@ -383,13 +373,15 @@
 }
 #addteamform p {
   font-size: 24px;
-  padding: 20px 0 0 0;
+  padding: 20px 0 5px 0;
   font-weight: 500;
   color: white;
 }
 #addteamform input {
   width: 70%;
   height: 40px;
+  border: none;
+  border-radius: 5px;
 }
 #addteamform select {
   width: 70%;
@@ -404,13 +396,13 @@
   color: #fff;
   padding: 16px 32px;
   letter-spacing: 2px;
-  background-color: #001f3f;
+  background-color: #027166;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 #addteamform button:hover {
-  box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+  box-shadow: 0 2px 10px rgb(0 1 0 / 50%);
 }
 #slogan {
   justify-content: center;
@@ -418,8 +410,7 @@
   color: white;
   padding: 20px 0;
   width: 100%;
-  background-color:black;
-  cursor: pointer;
+  background-color:rgba(117, 112, 117, 0.692);
 }
  
 #slogan2 {
@@ -429,8 +420,7 @@
   margin-top: -30px;
   padding: 20px 0;
   width: 100%;
-  background-color:black;
-   
+  background-color:rgba(117, 112, 117, 0.692);
 }
 #slogan3 {
   justify-content: center;
@@ -439,8 +429,7 @@
   padding: 20px 0;
   width: 100%;
   color: white;
-  background-color: black;
-  cursor: pointer;
+  background-color: rgba(117, 112, 117, 0.692);
 }
 #slogan4 {
   justify-content: center;
@@ -449,8 +438,7 @@
   padding: 20px 0;
   width: 100%;
   color: white;
-  background-color: black;
-  
+  background-color: rgba(117, 112, 117, 0.692);
 }
 #head-con4 {
   margin-top: -70px;
@@ -458,7 +446,7 @@
   box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
   position: fixed;
   height: 70px;
-  background-color: #FBF8BE;
+  background-color: #0beed7;
 }
 
 .dataodcard {
@@ -475,7 +463,7 @@
 #table-team {
   width: 100%;
   border: 1px solid black;
-  background-color: #FBF8BE;
+  background-color: rgb(215, 234, 249);
     
 }
 #table-team table {
@@ -484,17 +472,9 @@
   border-radius: 10px;
   padding: 20px;
   color: white;
-  background-color: #234E70;
- 
+  background: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
 }
-
-/* #table-team table:hover{
-  background: url("https://ak5.picdn.net/shutterstock/videos/7569544/thumb/1.jpg");
-  background-size: contain;
-  animation: animate 10s linear infinite;
-  color:#fff;
-  transition:all .3s ease-in;
-} */
   
 #table-team td {
   padding-top: 5px;
@@ -514,38 +494,48 @@
   margin-bottom: 10px;
   border-radius: 10px;
   padding: 20px;
-  background-color:#FBF8BE;
+  background-color:rgb(215, 234, 249);
+}
+#inp3, #inp4, #inp6{
+  border-radius: 5px;
 }
 
 /*---- footer---*/
-footer {
+.footer-content {
   background-color: black;
-  height: 180px;
+  height: 200px;
   padding: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-footer ul li {
+.footer-content ul li {
   list-style: none;
   text-transform: uppercase;
   margin-bottom: 5px;
   cursor: pointer;
 }
-footer ul li a,
-footer ul li {
+.footer-content ul li a,
+.footer-content ul li {
   text-decoration: none;
   color: #b8b8b8;
   font-size: 12px;
 }
-footer ul li a:hover,
-footer ul li:hover {
+.footer-content ul li a:hover,
+.footer-content ul li:hover {
   color: #009688;
 }
-footer ul li h3 {
+.footer-content ul li h3 {
   text-decoration: none;
   color: #dcdcdc;
   font-size: 16px;
   margin-bottom: 10px;
   cursor: pointer;
+}
+#owner{
+  color: #fff;
+  position: relative;
+  top: -30px;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
